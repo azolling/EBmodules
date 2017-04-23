@@ -1,9 +1,4 @@
----
-title: "README"
-author: "Alix Zollinger"
-date: "16/04/2017"
-output: html_document
----
+
 
 ```{r setup, include=FALSE,echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -27,3 +22,9 @@ library(devtools)
 install_github("azolling/EBmodules")
 library(EBmodules)
 ```
+
+## Example
+```{r example,eval=FALSE}
+estimation <-bayesian_modules(R,select=100000)
+```
+where $R$ is a list of correlation matrices.
